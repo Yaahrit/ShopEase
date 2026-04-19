@@ -1,70 +1,174 @@
-# Getting Started with Create React App
+# 🛒 ShopEase — E-Commerce Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Bootstrap-5.2.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Recoil-State_Management-3578E5?style=for-the-badge&logo=react&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React_Router-v6-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+</p>
 
-## Available Scripts
+<p align="center">
+  A fully responsive <strong>E-Commerce web application</strong> built with React 18, featuring product browsing,
+  user authentication, cart management, and a complete multi-page experience.
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="#">🌐 Live Demo</a> &nbsp;|&nbsp;
+  <a href="#-getting-started">⚙️ Setup</a> &nbsp;|&nbsp;
+  <a href="#-features">✨ Features</a>
+</p>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🏠 **Home Page** — Hero section with product carousels and sliders
+- 🛍️ **Product Page** — Dynamic product detail view with routing (`/product/:prodid`)
+- 🔐 **Authentication** — Login, Signup, and Forgot Password flows
+- 🛒 **Cart Management** — Add/remove products with real-time state updates
+- 👤 **User Profile** — Dynamic profile page with active page routing
+- 📄 **Static Pages** — About, Contact, FAQ, Terms & Conditions, Privacy Policy
+- 🔔 **Toast Notifications** — Real-time feedback using React Toastify
+- 📱 **Fully Responsive** — Mobile-first design using React Bootstrap
+- 🚫 **404 Page** — Custom Not Found page for invalid routes
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+| Category | Technology |
+|----------|-----------|
+| Frontend Framework | React 18 |
+| Routing | React Router DOM v6 |
+| State Management | Recoil |
+| UI Library | React Bootstrap 5 |
+| Carousels | React Slick, React Multi Carousel |
+| Notifications | React Toastify |
+| Styling | CSS3, Bootstrap 5 |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+ShopEase/
+│
+├── public/                   # Static public assets
+└── src/
+    ├── ASSETS/               # Images, icons, static files
+    ├── COMPONENTS/           # Reusable UI components (Navbar, Footer, etc.)
+    ├── PAGES/
+    │   ├── HomePage/         # Landing page with carousels
+    │   ├── Product/          # Product detail page
+    │   ├── Cart/             # Shopping cart
+    │   ├── Auth/             # Login, Signup, ForgotPassword
+    │   ├── User/             # User profile page
+    │   └── Extra/            # About, Contact, FAQ, T&C, Privacy Policy
+    ├── Providers/            # Recoil state providers
+    ├── App.js                # Main app with route definitions
+    └── index.js              # Entry point
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🗺️ App Routes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Route | Page |
+|-------|------|
+| `/` | Home |
+| `/product/:prodid` | Product Detail |
+| `/login` | Login |
+| `/signup` | Signup |
+| `/forgotpassword` | Forgot Password |
+| `/cart` | Shopping Cart |
+| `/user/:activepage` | User Profile |
+| `/about` | About Us |
+| `/contact` | Contact |
+| `/FAQ` | FAQ |
+| `/termsandconditions` | Terms & Conditions |
+| `/privacypolicy` | Privacy Policy |
+| `*` | 404 Not Found |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## ⚙️ Getting Started
 
-## Learn More
+### Prerequisites
+- Node.js v16+
+- npm v8+
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# 1. Clone the repository
+git clone https://github.com/yaahrit/ShopEase.git
+cd ShopEase
 
-### Code Splitting
+# 2. Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 3. Start development server
+npm start
+```
 
-### Analyzing the Bundle Size
+Open your browser at:
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Build for Production
 
-### Making a Progressive Web App
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🚀 Planned Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [ ] Backend integration with Spring Boot REST API
+- [ ] Payment gateway integration (Razorpay/Stripe)
+- [ ] Product search and filter functionality
+- [ ] Order history and tracking
+- [ ] Admin dashboard for product management
+- [ ] JWT-based secure authentication
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+```bash
+git checkout -b feature/your-feature-name
+git commit -m "Add: your feature description"
+git push origin feature/your-feature-name
+# Open a Pull Request
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Yash Raj**
+
+<p>
+  <a href="https://yashrajhub.netlify.app">
+    <img src="https://img.shields.io/badge/Portfolio-FF6B00?style=flat&logo=vercel&logoColor=white"/>
+  </a>
+  <a href="https://linkedin.com/in/yashrajhub">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://github.com/yaahrit">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
+  </a>
+</p>
+
+---
+
+<p align="center">⭐ Star this repo if you found it useful!</p>
